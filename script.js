@@ -72,3 +72,17 @@ document
     // Here you can handle the form submission, e.g., sending the data to your server
     alert("Form submitted!");
   });
+
+document.querySelector(".book-btn").addEventListener("click", () => {
+  const name = document.querySelector("input[placeholder='Name']").value.trim();
+  const mobile = document
+    .querySelector("input[placeholder='Mobile Number']")
+    .value.trim();
+  const consent = document.querySelector("#consent").checked;
+
+  if (!name || !mobile || !consent) {
+    alert("Please fill all fields and accept terms.");
+  } else {
+    alert("Consultation booked successfully!");
+  }
+});
