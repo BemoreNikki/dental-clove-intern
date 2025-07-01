@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dental Clove</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo" aria-label="Clove Dental logo">
+        <div class="logo-main">clove<span class="smile">:)</span></div>
+        <div class="logo-sub" aria-hidden="true">DENTAL</div>
+      </div>
+      <div class="actions">
+        <button class="btn-appointment">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+            <line x1="12" y1="14" x2="12" y2="18" />
+            <line x1="9" y1="17" x2="15" y2="17" /></svg
+          >Book Appointment
+        </button>
+        <button
+          class="btn-phone"
+          aria-label="Call 985-6589-510"
+          onclick="callNumber()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67 A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 c.13 1.21.39 2.39.76 3.5a2 2 0 0 1-.45 2.11L9.09 10.91 a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45 c1.11.37 2.29.63 3.5.76a2 2 0 0 1 1.72 2z"
+            />
+          </svg>
+          985-6589-510
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="info-section">
+        <h1>Painless Root Canal Treatment in Delhi</h1>
+        <p>Expert RCT. Zero Pain. Right Here in Delhi.</p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <div class="form-section">
+        <h2>Get Expert Dental Guidance in Delhi</h2>
+        <p>
+          Book your free consultation today and take the first step towards
+          healthy, beautiful teeth.
+        </p>
+        <form id="consultation-form">
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Mobile Number" required />
+          <input type="text" placeholder="Captcha" required />
+          <div class="terms">
+            <input type="checkbox" required />
+            <label for="terms"
+              >I agree to CLOVE Dental’s <a href="#">Terms</a> and
+              <a href="#">Privacy Policy</a> and consent to contact via phone,
+              email, or SMS.</label
+            >
+          </div>
+          <button type="submit" class="submit-btn">
+            Book a Free Consultation
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container-stats">
+      <div class="stat">
+        <i class="icon healthcare"></i>
+        <div class="text">🩺 600+ Clinics</div>
+      </div>
+      <div class="stat">
+        <i class="icon dentist"></i>
+        <div class="text">👨‍⚕️ 1300+ Dentists</div>
+      </div>
+      <div class="stat">
+        <i class="icon patient"></i>
+        <div class="text">😀 30L+ Happy Patients</div>
+      </div>
+      <div class="stat">
+        <i class="icon ortho"></i>
+        <div class="text">🦷 35K+ Ortho Cases</div>
+      </div>
+      <div class="stat">
+        <i class="icon implant"></i>
+        <div class="text">🪥 55K+ Implants Placed</div>
+      </div>
+    </div>
+
+    <!-- Root‑canal‑treatments section -->
+    <section class="root-canal">
+      <h2 class="root-canal__title">Types of Root Canal Treatments</h2>
+      <p class="root-canal__subtitle">
+        In a root canal, the dentist removes infected pulp, cleans the tooth,
+        and fills it with special material.
+      </p>
+
+      <div class="root-canal__cards">
+        <!-- Card 1 -->
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              src="root-canal-img1.webp"
+              alt="Root canal tool inside a tooth"
+            />
+          </figure>
+
+          <div class="card__content">
+            <h3 class="card__heading">Root Canal Treatment</h3>
+            <p class="card__tagline">Ideal for infected or damaged tooth</p>
+
+            <h4 class="card__subheading">Types of RCT</h4>
+            <ul class="card__list">
+              <li>Root Canal Treatment</li>
+              <li>Split RCT</li>
+              <li>Split RCT with rubber dam</li>
+              <li>Split RCT with laser</li>
+            </ul>
+
+            <p class="card__price-label card-starting-price">Starting Price</p>
+            <p class="card__price">₹ 19,999</p>
+
+            <button class="card__btn" data-track="rct">
+              Get Free Consultation
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              src="root-canal-img2.webp"
+              alt="Re‑root canal tool inside a tooth"
+            />
+          </figure>
+
+          <div class="card__content">
+            <h3 class="card__heading">Re‑Root Canal Treatment</h3>
+            <p class="card__tagline">
+              Ideal issues that persist or recur after an initial root canal
+              treatment
+            </p>
+
+            <h4 class="card__subheading">Types of RCT</h4>
+            <ul class="card__list">
+              <li>Re‑RCT with rubber dam</li>
+              <li>Re‑RCT laser specialist</li>
+              <li>e‑RCT with retrieval of old RCT filling</li>
+            </ul>
+
+            <p class="card__price-label card-starting-price">Starting Price</p>
+            <p class="card__price">₹ 19,999</p>
+
+            <button class="card__btn" data-track="re-rct">
+              Get Free Consultation
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="smiles-container">
+      <div class="smiles-header">
+        <h2 class="smiles-title">Real Smiles, Real Transformations</h2>
+        <p class="smiles-subtitle">
+          See the life-changing results our dental implant patients enjoy
+        </p>
+      </div>
+
+      <div class="smiles-grid">
+        <!-- Profile 1 -->
+        <div class="smile-profile">
+          <div class="smile-images">
+            <img src="before_after_img1.jpeg" alt="Before Arjun" />
+          </div>
+          <div class="smile-details">
+            <p class="smile-name">Arjun Mehta</p>
+            <p class="smile-location">Mumbai</p>
+          </div>
+        </div>
+
+        <!-- Profile 2 -->
+        <div class="smile-profile">
+          <div class="smile-images">
+            <img src="before_after_img2.jpeg" alt="Before Kavita" />
+          </div>
+          <div class="smile-details">
+            <p class="smile-name">Kavita Sharma</p>
+            <p class="smile-location">Bangalore</p>
+          </div>
+        </div>
+
+        <!-- Profile 3 -->
+        <div class="smile-profile">
+          <div class="smile-images">
+            <img src="before_after_img3.jpeg" alt="Before Neha" />
+          </div>
+          <div class="smile-details">
+            <p class="smile-name">Neha Joshi</p>
+            <p class="smile-location">Delhi</p>
+          </div>
+        </div>
+
+        <!-- Profile 4 -->
+        <div class="smile-profile">
+          <div class="smile-images">
+            <img src="before_after_img4.jpeg" alt="Before Viram" />
+          </div>
+          <div class="smile-details">
+            <p class="smile-name">Viram Desai</p>
+            <p class="smile-location">Chennai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="why-clove">
+      <!-- Header -->
+      <div class="why-clove__header">
+        <h2>Why Choose Clove Dental</h2>
+        <p>
+          Clove Dental is India’s Leading dental care brand with 600+ clinic
+          nationwide
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="why-clove__content">
+        <!-- Benefit list -->
+        <ul class="benefits">
+          <li>
+            <span class="text">DORI - A.I. enabled Dental chair</span>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <span class="text"
+              >10x Safety and 4 steps sterilization process</span
+            >
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <span class="text">Experienced and Certified implantologist</span>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <span class="text">Updated with world class equipments</span>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <span class="text">Regular audits for safety protocols</span>
+            <span class="plus">+</span>
+          </li>
+        </ul>
+
+        <!-- Image -->
+        <div class="image-wrapper">
+          <img src="whychooseus_img.jpg" alt="Dentist and patient" />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-container" aria-label="Patient testimonials">
+      <h2>What Our Patients Say</h2>
+      <p class="intro">
+        Real smiles, real stories. Here’s what our patients love about their
+        CLOVE Dental experience!
+      </p>
+
+      <div class="testimonial-cards">
+        <article
+          class="testimonial-card"
+          tabindex="0"
+          aria-labelledby="name1 treatment1 location1"
+        >
+          <img src="doct1.jpeg" alt="doctor1" class="testimonial-img" />
+          <div class="testimonial-info">
+            <span id="name1" class="testimonial-name">Shubham</span>
+            <span
+              id="treatment1"
+              class="testimonial-treatment"
+              aria-label="Treatment Aligners"
+              >Aligners</span
+            >
+            <div id="location1" class="testimonial-location">Indore</div>
+          </div>
+        </article>
+
+        <article
+          class="testimonial-card"
+          tabindex="0"
+          aria-labelledby="name2 treatment2 location2"
+        >
+          <img src="doct2.jpeg" alt="doctor1" class="testimonial-img" />
+          <div class="testimonial-info">
+            <span id="name2" class="testimonial-name">Shubpreet</span>
+            <span
+              id="treatment2"
+              class="testimonial-treatment"
+              aria-label="Treatment RCT"
+              >RCT</span
+            >
+            <div id="location2" class="testimonial-location">Indore</div>
+          </div>
+        </article>
+
+        <article
+          class="testimonial-card"
+          tabindex="0"
+          aria-labelledby="name3 treatment3 location3"
+        >
+          <img src="doct3.png" alt="doctor1" class="testimonial-img" />
+          <div class="testimonial-info">
+            <span id="name3" class="testimonial-name">Anita</span>
+            <span
+              id="treatment3"
+              class="testimonial-treatment"
+              aria-label="Treatment Laser Treatment"
+              >Laser Treatment</span
+            >
+            <div id="location3" class="testimonial-location">Banglore</div>
+          </div>
+        </article>
+
+        <article
+          class="testimonial-card"
+          tabindex="0"
+          aria-labelledby="name4 treatment4 location4"
+        >
+          <img src="doct4.jpeg" alt="doctor1" class="testimonial-img" />
+          <div class="testimonial-info">
+            <span id="name4" class="testimonial-name">Aarti</span>
+            <span
+              id="treatment4"
+              class="testimonial-treatment"
+              aria-label="Treatment Dentures"
+              >Dentures</span
+            >
+            <div id="location4" class="testimonial-location">Indore</div>
+          </div>
+        </article>
+
+        <article
+          class="testimonial-card"
+          tabindex="0"
+          aria-labelledby="name5 treatment5 location5"
+        >
+          <img src="doct5.jpeg" alt="doctor1" class="testimonial-img" />
+          <div class="testimonial-info">
+            <span id="name5" class="testimonial-name">Aditya</span>
+            <span
+              id="treatment5"
+              class="testimonial-treatment"
+              aria-label="Treatment Implant"
+              >Implant</span
+            >
+            <div id="location5" class="testimonial-location">Indore</div>
+          </div>
+        </article>
+
+        <article
+          class="testimonial-card"
+          tabindex="0"
+          aria-labelledby="name6 location6"
+        >
+          <img src="doct6.jpeg" alt="doctor1" class="testimonial-img" />
+          <div class="testimonial-info">
+            <span id="name6" class="testimonial-name">Nikita</span>
+            <div id="location6" class="testimonial-location">Indore</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="appointment-box">
+      <h2 class="title">Book an Appointment With Clove Dentist in Delhi</h2>
+      <div class="form-row">
+        <input type="text" placeholder="Name" class="input-field" />
+        <input type="text" placeholder="Phone" class="input-field" />
+        <div class="captcha-container">
+          <input type="text" placeholder="Captcha" class="captcha-input" />
+          <div class="captcha-box">1514</div>
+        </div>
+      </div>
+      <div class="form-footer">
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          I agree to CLOVE Dental’s <a href="#">Terms</a> and
+          <a href="#">Privacy Policy</a> and consent to contact via phone,
+          email, or SMS.
+        </label>
+        <button class="submit-btn">Book Free Consultation</button>
+      </div>
+    </div>
+
+    <section class="safety-section">
+      <h2 class="section-title">Safety, Precision, and Innovation</h2>
+      <p class="section-subtitle">
+        Advanced care with top safety, sterilization, and technology
+      </p>
+
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div
+          class="card feature-card"
+          style="background-image: url('dental_chair.jpeg')"
+        >
+          <div class="card-overlay dark-blue">
+            <h3><strong>Uncompromised</strong><br />Safety</h3>
+            <div class="underline"></div>
+            <p>
+              10X Safety Protocols for a secure and worry-free dental experience
+            </p>
+            <a href="#" class="learn-more"
+              ><span class="icon">🔍</span> Learn More →</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="card feature-card"
+          style="background-image: url(sterilization-tools.jpeg)"
+        >
+          <div class="card-overlay dark-blue">
+            <h3><strong>Assuring</strong><br />Cleanliness</h3>
+            <div class="underline"></div>
+            <p>
+              Rigid 4-Step Sterilization process, assuring a safe a spotless
+              clinic.
+            </p>
+            <a href="#" class="learn-more"
+              ><span class="icon">🔍</span> Learn More →</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="card feature-card"
+          style="background-image: url('ai-sterilization.jpeg')"
+        >
+          <div class="card-overlay brown">
+            <h3>
+              <strong>Experience</strong> <span class="highlight">AIPS</span>
+            </h3>
+            <div class="underline"></div>
+            <p>
+              Our AI-Powered Sterilization (AIPS)<br />Monitoring system from
+              DORI, USA<br />Exclusively at Clove
+            </p>
+            <a href="#" class="learn-more"
+              ><span class="icon">🔍</span> Learn More →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="google-reviews-section">
+      <div class="google-rating-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          alt="Google Logo"
+          class="google-logo"
+        />
+        <div class="rating-star">&#11088;</div>
+        <div class="rating-value">4.9</div>
+        <div class="rating-count">(1.6 Lakh +)</div>
+        <div class="verified-text">Verified Google Ratings</div>
+      </div>
+
+      <div class="google-reviews-container">
+        <h2 class="google-reviews-title">Google Reviews</h2>
+        <div class="google-reviews-cards">
+          <!-- Card 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Neha Singh"
+                class="avatar"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                class="card-google-logo"
+              />
+            </div>
+            <h3>Neha Singh</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Neha Singh"
+                class="avatar"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                class="card-google-logo"
+              />
+            </div>
+            <h3>Neha Singh</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Neha Singh"
+                class="avatar"
+              />
+            </div>
+            <h3>Neha Singh</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
